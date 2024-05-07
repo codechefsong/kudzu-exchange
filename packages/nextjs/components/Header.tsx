@@ -3,7 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BugAntIcon } from "@heroicons/react/24/outline";
+import { BugAntIcon, Square2StackIcon } from "@heroicons/react/24/outline";
 import { FaucetButton, RainbowKitCustomConnectButton } from "~~/components/scaffold-eth";
 
 type HeaderMenuLink = {
@@ -16,6 +16,11 @@ export const menuLinks: HeaderMenuLink[] = [
   {
     label: "Home",
     href: "/",
+  },
+  {
+    label: "TBA",
+    icon: <Square2StackIcon className="h-4 w-4" />,
+    href: "/tba",
   },
   {
     label: "Debug Contracts",
